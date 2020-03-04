@@ -22,11 +22,19 @@
         <h1>Cutls</h1>
     </div>
     <div id="next"><br>
-        <h2 class="center">Contact</h2>
+        <h2 class="center">About me</h2>
         <div class="flex-ct">
             <div class="card">
+                <p class="title">Cutls P</p>
+                <img src="./img/thedesk.png" class="appeal">
+                <p class="description center">学生/関西出身/{{fillLater}}在住/未成年</p>
+                <p class="description center">JavaScript(TypeScript)/Vue/PHP と HTML/CSS</p>
+                <p class="spacer"></p>
+                <p class="description center">ほしいものリストやKyash等は、<a href="https://thedesk.top">TheDesk</a>のページの最下部に記載</p>
+            </div>
+            <div class="card">
                 <p class="title"><a href="https://cutls.com/@Cutls" target="_blank" class="white-text">Mastodon</a></p>
-                <a href="https://cutls.com/@Cutls" target="_blank"><img src="./img/thedesk.png" class="appeal"></a>
+                <a href="https://cutls.com/@Cutls" target="_blank"><img src="./img/thinking.svg" class="appeal"></a>
                 <p class="description center"><a href="https://cutls.com/@Cutls" target="_blank"
                         class="white-text">Cutls <span class="tech">(Cutls@cutls.com)</span></a></p>
                 <div class="action">
@@ -39,7 +47,7 @@
                 </div>
                 <p class="spacer"></p>
                 <p class="description center">or <a href="https://github.com/cutls" target="_blank"
-                        class="small-link"><i class="fab fa-github"></i>cutls</a></p>
+                    class="small-link"><i class="fab fa-github"></i>cutls</a></p>
             </div>
         </div>
         <h2 class="center">Works</h2>
@@ -51,11 +59,7 @@
                 <p class="title">TheDesk</p>
                 <p class="description">Mastodonクライアント。</p>
                 <p class="description">基本的に全てを担当。</p>
-                <p class="tech">JavaScript, Node.js, CSS, HTML, WebSocket, PHP, MySQL</p>
-                <p class="tech">Electron: Windows (.exe, Microsoft Store appx), Linux (snap), macOS, electron-builder
-                </p>
-                <p class="tech">Landing Page, Microsoft Store, Open Source (GPL 3.0), Travis CI</p>
-                <p class="tech">Under reconstruction with Vue.js, TypeScript, PostCSS, NeDB</p>
+                <p class="tech">Electron(JavaScript/HTML/CSS)</p>
                 <div class="action">
                     <a href="https://thedesk.top" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     <a href="https://github.com/cutls/TheDesk" target="_blank"><i class="fab fa-github"></i></a>
@@ -66,56 +70,47 @@
             <div class="card">
                 <p class="title">TheDesk Docs</p>
                 <p class="description">TheDeskのWebドキュメント。GitHubとリアルタイム連携。</p>
-                <p class="tech">PHP, JavaScript, CSS, HTML, webhook (GitHub API)</p>
+                <p class="tech">PHP, JavaScript</p>
                 <p class="tech">Web</p>
                 <div class="action">
                     <a href="https://docs.thedesk.top" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="card">
-                <p class="title">votedon.</p>
+                <p class="title">Spamastodon</p>
                 <p class="description">Mastodonで簡単アンケート</p>
-                <p class="tech">PHP, MySQL, JavaScript (Vue.js), CSS, HTML, Pjax</p>
+                <p class="tech">JavaScript, Vue</p>
                 <p class="tech">Web</p>
                 <br>
-                <p class="tech">掲載:<a href="http://www.itmedia.co.jp/news/articles/1804/03/news147.html"
-                        target="_blank">マストドンで使えるアンケートツール「votedon.」 - ITmedia NEWS<i
-                            class="fas fa-external-link-alt"></i></a></p>
+                <p class="tech">MastodonのモデレーションAPIを使用してスパムを一括検索・対処できる。</p>
                 <div class="action">
-                    <a href="https://vote.thedesk.top" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://spamastodon.netlify.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <p class="title">votedon.</p>
+                <p class="description">Mastodonで簡単アンケート</p>
+                <p class="tech">PHP, MySQL, JavaScript, Vue</p>
+                <p class="tech"><s>Web</s>(終了済み)</p>
+                <br>
+                <p class="tech"></p>
+                <div class="action">
                     <a href="https://mstdn.jp/tags/votedon" target="_blank"><i class="fab fa-mastodon"></i></a>
                 </div>
             </div>
             <div class="card">
                 <p class="title">アスタルテ暇人ランキング</p>
                 <p class="description">アスタルテ(kirishima.cloud)のトゥート数ランキング</p>
-                <p class="tech">PHP, MySQL, JS, CSS, HTML</p>
-                <p class="tech">Web, bot (Mastodon)</p>
+                <p class="tech">PHP, MySQL, Vue</p>
+                <p class="tech"><s>Web</s>(終了済み), bot (Mastodon)</p>
                 <div class="action">
-                    <a href="https://hima.run" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     <a href="https://kirishima.cloud/@AstarteBot" target="_blank"><i class="fab fa-mastodon"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <p class="title">Mastodon bot</p>
-                <p class="description">強震モニタbot</p>
-                <p class="tech">緊急地震速報(最終報)に応じて強震モニタのGIFアニメを投稿するbot</p>
-                <p class="tech">国立研究開発法人防災科学技術研究所のK-NET(強震観測網)を使用しています。</p>
-                <div class="action">
-                    <a href="https://cutls.com/@rem_bot" target="_blank"><i class="fab fa-mastodon"></i></a>
-                </div>
-                <p class="description">コロムビアアイマスニュースbot</p>
-                <p class="tech">毎週更新されるコロムビアのアイマスニュースを監視するbot。臨時報にも対応。10分毎(金曜18:00-59は1分毎)チェック。</p>
-                <p class="tech">PHP, A3RT Text Summarization API</p>
-                <p class="tech">bot (Mastodon)</p>
-                <div class="action">
-                    <a href="https://imastodon.net/@cibot" target="_blank"><i class="fab fa-mastodon"></i></a>
                 </div>
             </div>
             <div class="card">
                 <p class="title">Quesdon<br>(toot.app)</p>
                 <p class="description">rinsuki氏のQuesdonのフォーク。独自機能をいくつか追加。</p>
-                <p class="tech">TypeScript, React, Webpack, MongoDB, JavaScript</p>
+                <p class="tech">TypeScript, React, Webpack, MongoDB</p>
                 <p class="tech">Web, bookmarklet</p>
                 <div class="action">
                     <a href="https://quesdon.toot.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
@@ -138,6 +133,12 @@
                     <a href="https://github.com/cutls/emojiCat" target="_blank" class="small-link">
                         <i class="fab fa-github"></i>
                     </a>
+                </p>
+                <p class="spacer"></p>
+                <p class="description">votedon. (Mastodon)
+                    掲載:<a href="http://www.itmedia.co.jp/news/articles/1804/03/news147.html"
+                        target="_blank">マストドンで使えるアンケートツール「votedon.」 - ITmedia NEWS<i
+                            class="fas fa-external-link-alt"></i></a>
                 </p>
                 <p class="spacer"></p>
                 <p class="description">被災地支援のためのマストドン研究会 (Mastodon)
@@ -166,6 +167,7 @@
                 <p class="title">終了済</p>
                 <p class="description">乃木坂46BISS</p>
                 <p class="description">JR西日本駅名標風画像作成サービス</p>
+                <p class="description">Mastodon bot(Webスクレイピング系)</p>
                 <p class="description center">他</p>
             </div>
             <div class="card">
@@ -180,14 +182,6 @@
                     </a>
                 </p>
                 <p class="tech">Mastodonへの見ているページのシェアをするための最速手段</p>
-                <p class="spacer"></p>
-                <p class="description">Mastodon no more 中華フォント
-                    <a href="https://chrome.google.com/webstore/detail/mastodon-no-more-%E4%B8%AD%E8%8F%AF%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/ckgelamoagdenmpnkllickjnepaccalf"
-                        target="_blank" class="small-link">
-                        <i class="fab fa-chrome"></i>
-                    </a>
-                </p>
-                <p class="tech">Mastodonの中華フォントになっちゃうやつを防ぐやつ(未完成)</p>
             </div>
             <div class="card">
                 <p class="title">コントリビューション</p>
@@ -205,7 +199,12 @@
                 <p class="title">翻訳</p>
                 <p class="tech">ちょっとだけ</p>
                 <p class="description">Liberapay(英語→日本語)</p>
-                <p class="description">Misskey(標準語→関西弁)</p>
+                <p class="description">Mastodonのドキュメント(英語→日本語)</p>
+                <p class="tech">
+                    <a href="https://new.docs.toot.app" target="_blank">翻訳中
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </p>
             </div>
             <div class="card">
                 <p class="title">執筆</p>
@@ -214,6 +213,12 @@
                         <i class="fas fa-external-link-alt"></i>
                     </a>
                 </p>
+                <p class="description">Hexo
+                    <a href="https://github.com/h3poteto/whalebird-desktop" target="_blank" class="small-link">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </p>
+                <p class="tech">昔はWordPressに、今はHexoに書いてる</p>
                 <p class="tech">思想中心になりつつある</p>
                 <p class="tech">いくつかのアドベントカレンダーに参加</p>
                 <p class="spacer"></p>
@@ -222,7 +227,13 @@
                         <i class="fas fa-external-link-alt"></i>
                     </a>
                 </p>
-                <p class="tech">コミックマーケットC96で頒布予定</p>
+                <p class="tech">執筆協力。コミックマーケットC96, 技書博, booth等で販売。</p>
+                <p class="description"> 分散SNS萬本 vol.2
+                    <a href="https://connpass.com/event/165550/" target="_blank" class="small-link">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </p>
+                <p class="tech">執筆協力。<b>募集中です！</b>2020年度中に執筆・頒布予定</p>
             </div>
         </div><br>
     </div>
