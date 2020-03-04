@@ -134,15 +134,20 @@ p {
 a {
 	color: #7cabd1;
 	text-decoration: none;
+}
+a.effect {
 	display: inline-block;
 }
-a::after {
+a.effect::after {
 	content: '';
 	display: block;
 	width: 0;
 	transition: width 0.3s;
+	border-bottom: 1px solid #7cabd1;
+}
+a.effect.white-text::after {
 	border-bottom: 1px solid #fff;
 }
-a:hover::after {
+a.effect:hover::after {
 	width: 100%;
 }
