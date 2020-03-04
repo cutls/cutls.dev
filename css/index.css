@@ -134,7 +134,15 @@ p {
 a {
 	color: #7cabd1;
 	text-decoration: none;
+	display: inline-block;
 }
-a:hover {
-	text-decoration: underline;
+a::after {
+	content: '';
+	display: block;
+	width: 0;
+	transition: width 0.3s;
+	border-bottom: 1px solid #fff;
+}
+a:hover::after {
+	width: 100%;
 }
