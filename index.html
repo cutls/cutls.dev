@@ -86,10 +86,15 @@
                 <p class="description">King Gnu</p>
             </div>
             <div class="card">
+                個人的に好きな曲がランダムで出ます。クリックしたらソースコードに飛びます。読み込みには数秒かかります。<br />
+                <p class="title">デレマス</p>
                 <a href="https://github.com/cutls/today-recommended-song" target="_blank">
                     <img src="" id="trs" style="width: 100%;">
                 </a>
-                個人的に好きなデレマス曲がランダムで出ます。クリックしたらソースコードに飛びます。読み込みには数秒かかります。
+                <p class="title">それ以外</p>
+                <a href="https://github.com/cutls/today-recommended-song" target="_blank">
+                    <img src="" id="trs2" style="width: 100%;">
+                </a>
             </div>
         </div>
         <h2 class="center">Works</h2>
@@ -207,7 +212,10 @@
     <div id="copyright" class="white-text">
         Copyright &copy; 2015 Cutls.com All rights reserved.
     </div>
-    <script>window.onload = function () { document.getElementById('trs').setAttribute('src', 'https://trs-cutls.netlify.app/.netlify/functions/song?songs') };</script>
+    <script>window.onload = function () { 
+        document.getElementById('trs').setAttribute('src', 'https://trs-cutls.netlify.app/.netlify/functions/song?songs')
+        document.getElementById('trs2').setAttribute('src', 'https://trs-cutls.netlify.app/.netlify/functions/song?spotify')
+         };</script>
 </body>
 
 </html>
