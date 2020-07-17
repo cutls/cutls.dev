@@ -87,9 +87,9 @@
             </div>
             <div class="card">
                 <a href="https://github.com/cutls/today-recommended-song" target="_blank">
-                    <img src="https://trs-cutls.netlify.app/.netlify/functions/song?songs" style="width: 100%;" loading="lazy">
+                    <img src="" id="trs" style="width: 100%;">
                 </a>
-                個人的に好きなデレマス曲がランダムで出ます。クリックしたらソースコードに飛びます。
+                個人的に好きなデレマス曲がランダムで出ます。クリックしたらソースコードに飛びます。読み込みには数秒かかります。
             </div>
         </div>
         <h2 class="center">Works</h2>
@@ -207,6 +207,7 @@
     <div id="copyright" class="white-text">
         Copyright &copy; 2015 Cutls.com All rights reserved.
     </div>
+    <script>window.onload = function () { document.getElementById('trs').setAttribute('src', 'https://trs-cutls.netlify.app/.netlify/functions/song?songs') };</script>
 </body>
 
 </html>
