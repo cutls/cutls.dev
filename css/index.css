@@ -1,157 +1,194 @@
 body {
-	background-image: url('../img/top.png');
-	font-family: 'Montserrat', Meiryo, Hiragino Kaku Gothic, sans-serif;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-	background-size: cover;
-	padding: 0;
-	margin: 0;
-	overflow-x: hidden;
-	color: white;
+    background-image: url('../img/top.png');
+    font-family: 'Montserrat', Meiryo, Hiragino Kaku Gothic, sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    color: white;
 }
+
 #start {
-	font-family: 'Open Sans';
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	z-index: 2;
-	height: 50vh;
+    font-family: 'Open Sans';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    height: 50vh;
 }
+
 #start div {
-	text-align: center;
-	margin: 10px;
+    text-align: center;
+    margin: 10px;
 }
+
 #next {
-	background-color: #282c37;
-	width: 100vw;
-	min-height: 50vh;
+    background-color: #282c37;
+    width: 100vw;
+    min-height: 50vh;
 }
+
 h1 {
-	font-size: 5rem;
-	font-weight: normal;
+    font-size: 5rem;
+    font-weight: normal;
 }
+
 h2 {
-	font-size: 3rem;
-	font-weight: normal;
+    font-size: 3rem;
+    font-weight: normal;
 }
+
 h3 {
-	font-size: 2rem;
-	font-weight: normal;
-	margin: 0;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0;
 }
+
 .white-text {
-	color: white;
+    color: white;
 }
+
 .center {
-	text-align: center;
+    text-align: center;
 }
+
 .left-side {
-	text-align: right;
-	width: 50vw;
+    text-align: right;
+    width: 50vw;
 }
+
 .right-side {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
 }
+
 .flex-ct {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .flex-ct .card {
-	margin-left: 10px;
-	margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 .flex-lp {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
 .card {
-	width: 250px;
-	height: 320px;
-	margin: 5px;
-	border-radius: 2px;
-	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
-		0 2px 4px -1px rgba(0, 0, 0, 0.3);
-	padding: 25px;
-	text-align: center;
+    width: 250px;
+    height: 320px;
+    margin: 5px;
+    border-radius: 2px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    text-align: center;
 }
+
 p {
-	margin: 0;
+    margin: 0;
 }
+
 .card .title {
-	font-size: 2rem;
-	margin: 10px;
+    font-size: 2rem;
+    margin: 10px;
 }
+
 .card .semi-title {
-	font-size: 1.6rem;
-	margin: 10px;
+    font-size: 1.6rem;
+    margin: 10px;
 }
+
 .white-text {
-	color: white;
+    color: white;
 }
+
 .card .appeal {
-	width: 50px;
+    width: 50px;
 }
+
 .card img.me {
-	width: 20px;
+    width: 20px;
 }
+
 .card .action {
-	margin-top: 10px;
+    margin-top: 10px;
 }
+
 .small-link {
-	color: gray;
-	transition: color 0.3s;
+    color: gray;
+    transition: color 0.3s;
 }
+
 .small-link:hover {
-	color: white;
+    color: white;
 }
+
 .card .tech {
-	font-size: 0.7rem;
-	color: #e1e1e1;
-	text-align: left;
+    font-size: 0.7rem;
+    color: #e1e1e1;
+    text-align: left;
 }
+
 .card .description {
-	text-align: left;
+    text-align: left;
 }
+
 .card .action i {
-	font-size: 1.5rem;
-	color: gray;
-	margin-left: 5px;
-	transition: color 0.3s;
+    font-size: 1.5rem;
+    color: gray;
+    margin-left: 5px;
+    transition: color 0.3s;
 }
+
 .card .description.center,
 .card .tech.center {
-	text-align: center;
+    text-align: center;
 }
+
 .spacer {
-	height: 1rem;
+    height: 1rem;
 }
+
 .card .action i:hover {
-	color: white;
+    color: white;
 }
+
 a {
-	color: #7cabd1;
-	text-decoration: none;
+    color: #7cabd1;
+    text-decoration: none;
 }
+
 a.effect {
-	display: inline-block;
+    display: inline-block;
 }
+
 a.effect::after {
-	content: '';
-	display: block;
-	width: 0;
-	transition: width 0.3s;
-	border-bottom: 1px solid #7cabd1;
+    content: '';
+    display: block;
+    width: 0;
+    transition: width 0.3s;
+    border-bottom: 1px solid #7cabd1;
 }
+
 a.effect.white-text::after {
-	border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
+
 a.effect:hover::after {
-	width: 100%;
+    width: 100%;
+}
+
+details {
+    margin-left: 5px;
 }
