@@ -102,8 +102,7 @@
                 <p class="description">それ以外</p>
                 <a href="https://github.com/cutls/today-recommended-song" target="_blank">
                     <img src="" id="trs2" style="width: 100%;">
-                </a><br />
-                <a class="pointer" id="reload">リロード</a>
+                </a>
             </div>
         </div>
         <h2 class="center">Works</h2>
@@ -226,11 +225,6 @@
         Copyright &copy; 2015 Cutls.com All rights reserved.
     </div>
     <script>
-        document.getElementById('reload').addEventListener('click', function() {
-            document.getElementById('trs').setAttribute('src', '')
-            document.getElementById('trs2').setAttribute('src', '')
-            load()
-        })
         window.onload = function () {
             load()
         };
