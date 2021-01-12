@@ -47,7 +47,10 @@ module.exports = {
                   {
                     from: "img/*"
                   },
-                ],
+                  {
+                    from: "CNAME"
+                  },
+                ]
               }
           ),
         new MiniCssExtractPlugin({
