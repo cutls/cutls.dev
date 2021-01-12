@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "copy-webpack-plugin": "^7.0.0",
     "css-loader": "^5.0.1",
     "fibers": "^5.0.0",
     "file-loader": "^6.2.0",
