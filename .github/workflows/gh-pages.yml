@@ -14,8 +14,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 14.x
-    - name: Install NPM packages
-      run: npm i
+    - name: Install NPM packages with Yarn
+      run: yarn
     - name: Build website
       run: npx webpack
     - name: Deploy website
