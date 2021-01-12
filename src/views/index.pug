@@ -1,0 +1,148 @@
+doctype html
+html(lang="ja")
+head
+  meta(charset="utf8")
+  meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=1, user-scalable=yes")
+  meta(property="og:title" content="Cutls")
+  meta(property="og:image" content="https://cutls.com/img/thedesk.png")
+  meta(property="og:image:width" content="512")
+  meta(property="og:image:height" content="512")
+  title Cutls
+  meta(name="theme-color" content="green")
+  link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Montserrat|Open+Sans:300")
+  link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css")
+
+body
+  #start
+    h1 Cutls
+  #next
+    br
+    h2.center About me
+    .flex-ct
+      .card
+        p.title Curls P
+        p.description.center 成人済み大学生
+        p.description.center React(Native), Vue, Node.js with TypeScript
+        p.description.center 成人済み大学生
+        p.spacer
+        details
+          summary 金銭的支援
+          a(href="https://cutls.fanbox.cc" target="_blank" rel="noopener") Pixiv FANBOX
+          span /
+          a(href="https://www.patreon.com/cutls" target="_blank" rel="noopener") Patreon
+          span /
+          a(href="https://www.amazon.co.jp/registry/wishlist/2TV35ZHHJPDSB" target="_blank" rel="noopener") Amazonほしい物リスト
+          span /
+          a.pointer#copyBitcoin Bitcoin(クリックしてアドレスをコピー)
+          p
+            p Kyash
+            a(href="kyash://qr/u/611373232688837504")
+              img(src="./img/qrcode.png" width=70)
+      .card
+        p.title Contact me
+        p.semi-title
+          a(href="https://1m.cutls.com/@Cutls" target="_blank" class="white-text effect" rel="me noopener") Mastodon
+        a(href="https://1m.cutls.com/@Cutls" target="_blank" rel="noopener")
+          img(src="./img/thinking.svg").appeal
+        p.description.center
+          a(href="https://1m.cutls.com/@Cutls" target="_blank" class="white-text effect" rel="me noopener")
+            span Cutls
+            span.tech (Cutls@1m.cutls.com)
+      .card
+        p.title LOVE
+        p.description アイドルマスターシンデレラガールズ
+        p.tech 担当：新田美波(第9回シンデレラガール総選挙 総合8位/属性5位 6,262,878票)
+        p.tech 作詞作曲家ではTaku Inoue, AJURIKA, 広川恵一, 石濱翔, 朝倉路, 八城雄太(敬称略)がすき
+        p.spacer
+        p.description
+          span チンアナゴ
+          span.tech 京都水族館
+        p.spacer
+        p.description
+          span 俳句
+          span.tech ちょっとだけ
+        p.spacer
+        p.description
+          span King Gnu
+      .card
+        p.tech 個人的に好きな曲がランダム(エッジキャッシュあり)で出ます。
+        p.description デレマス
+        a(href="https://github.com/cutls/today-recommended-song" target="_blank")
+          img(src="" style={"width": "100%"})#trs
+        p.description デレマス
+        a(href="https://github.com/cutls/today-recommended-song" target="_blank")
+          img(src="" style={"width": "100%"})#trs2
+    h2.center Works
+    p.spacer
+    .flex-lp
+      .card
+        img.appeal(src="./img/thedesk.png")
+        p.title TheDesk
+        p.description.center Mastodon Client for PC
+        p.tech.center Electron (JacaScript, HTML, CSS)
+        .action
+          a(href="https://thedesk.top" target="_blank")
+            i.fas.fa-external-link-alt
+          a(href="https://github.com/cutls/TheDesk" target="_blank")
+            i.fab.fa-github
+        p.description.center ドキュメント
+          .action
+            a(href="https://docs.thedesk.top" target="_blank")
+              i.fas.fa-external-link-alt
+      .card
+        p.spacer
+        p.description votedon.
+        p.tech
+          span 掲載
+          a(href="http://www.itmedia.co.jp/news/articles/1804/03/news147.html" target="_blank")
+            span マストドンで使えるアンケートツール「votedon.」 - ITmedia NEWS
+            i.fas.fa-external-link-alt
+        p.spacer
+        p.description
+          span 被災地のためのマストドン研究会
+          a(href="https://donken.org/forum" target="_blank").small-link
+            i.fas.fa-external-link-alt
+        p.tech マストドン連携ログインを設計
+        p.spacer
+        p.description
+          span FatestMastodonShare
+          a(href="https://github.com/cutls/FastestMastodonShare" target="_blank").small-link
+            i.fab.fa-github
+          a(href="https://chrome.google.com/webstore/detail/fastestmastodonshare/gfndaijdpkalbldphbofbjpjmpfibgji" target="_blank").small-link
+            i.fab.fa-chrome
+        p.tech Mastodonへの見ているページのシェアをするための最速Chrome拡張機能
+        p.spacer
+        p.description
+          span 句会bot
+          a(href="https://gitlab.com/kukai.bot" target="_blank").small-link
+            i.fab.fa-gitlab
+          a(href="https://8i9.me" target="_blank").small-link
+            i.fas.fa-external-link-alt
+        p.tech ReactNative
+        p.tech Engineerとして(neither Producer nor Director)
+      .card
+        p.title 翻訳
+          p.tech ちょっとだけ
+          p.description Liberapay(en→ja)
+          p.description Mastodonのドキュメント(en→ja)
+      .card
+        p.title 執筆
+        p.description
+          span Hexo
+          a(href="https://blog.cutls.com" target="_blank").small-link
+            i.fas.fa-external-link-alt
+        p.tech 
+          a(href="https://code.cutls.com" target="_blank").small-link WordPress
+          span もあった
+        p.tech いくつかのアドベントカレンダーに参加
+        p.description
+          span 分散SNS萬本 vol.1
+          a(href="https://express.komittee.net/posts/readme-of-distributed-sns-everything-book-vol1/" target="_blank").small-link
+            i.fas.fa-external-link-alt
+        p.tech 執筆協力。C96(コミケ) 技書博, booth等で販売。
+        p.description
+          span 分散SNS萬本 vol.2
+          a(href="https://connpass.com/event/165550/" target="_blank").small-link
+            i.fas.fa-external-link-alt
+        p.tech 執筆協力。技術書典9でダウンロード販売。
+    #copyright.white-text &copy; Cutls 2015 All rights reserved

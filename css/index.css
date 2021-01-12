@@ -1,5 +1,5 @@
 body {
-    background-image: url('../img/top.png');
+    background-image: url('https://cutls.dev/img/top.png');
     font-family: 'Montserrat', Meiryo, Hiragino Kaku Gothic, sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -129,6 +129,7 @@ p {
 .small-link {
     color: gray;
     transition: color 0.3s;
+    margin-left: 3px;
 }
 
 .small-link:hover {
