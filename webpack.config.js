@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const HtmlWebpackPugPlugin = require("html-webpack-pug-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-
 module.exports = {
     entry: './src/js/index.js',
     mode: 'production',
@@ -15,11 +14,7 @@ module.exports = {
                 use: 'pug-loader'
             },
             {
-                test: /\.png$/,
-                use: 'file-loader',
-            },
-            {
-                test: /\.jpg$/,
+                test: /\.webp$/,
                 use: 'file-loader',
             },
             {
@@ -44,12 +39,12 @@ module.exports = {
         new CopyWebpackPlugin(
             {
                 patterns: [
-                  {
-                    from: "CNAME"
-                  },
+                    {
+                        from: "CNAME"
+                    },
                 ]
-              }
-          ),
+            }
+        ),
         new MiniCssExtractPlugin({
             filename: "style.css",
         }),
