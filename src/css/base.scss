@@ -1,0 +1,73 @@
+body {
+    background-image: url('/img/top.png');
+    font-family: 'Montserrat', Meiryo, Hiragino Kaku Gothic, sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    color: white;
+}
+
+#start {
+    font-family: 'Open Sans';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    height: 50vh;
+    text-align: center;
+    margin: 10px;
+}
+
+#next {
+    background-color: #282c37;
+    width: 100vw;
+    min-height: 50vh;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.white-text {
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+.small-link {
+    color: gray;
+    transition: color 0.3s;
+    margin-left: 3px;
+}
+
+.small-link:hover {
+    color: white;
+}
+
+
+.spacer {
+    height: 1rem;
+}
