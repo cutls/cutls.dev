@@ -58,8 +58,11 @@
 		font-size: 0.7rem;
 		color: #e1e1e1;
 		text-align: left;
-		.center {
+		&.center {
 			text-align: center;
+			&__important {
+				text-align: center !important;
+			}
 		}
 	}
 	.action i {
