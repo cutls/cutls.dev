@@ -1,146 +1,78 @@
 doctype html
 html(lang="ja")
-head
-  meta(charset="utf8")
-  meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=1, user-scalable=yes")
-  meta(property="og:title" content="Cutls")
-  meta(property="og:image" content="https://cutls.com/img/thedesk.png")
-  meta(property="og:image:width" content="512")
-  meta(property="og:image:height" content="512")
-  title Cutls
-  meta(name="theme-color" content="green")
-  link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Montserrat|Open+Sans:300")
-  link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css")
+  head
+    meta(charset="utf8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=1, user-scalable=yes")
+    meta(property="og:title" content="Cutls")
+    meta(property="og:image" content="https://cutls.com/img/thedesk.png")
+    meta(property="og:image:width" content="512")
+    meta(property="og:image:height" content="512")
+    title Cutls
+    meta(name="theme-color" content="teal")
 
-body
-  #start
-    h1 Cutls
-  #next
-    br
-    h2.center About me
-    .flex-ct
-      .card
-        p.title Cutls P
-        p.description.center 限界地方大学生(2022年現在)
-        p.description.center React(Native), Vue, Node.js with TypeScript
-        p.spacer
-        details
-          summary 金銭的支援
-          a(href="https://cutls.fanbox.cc" target="_blank" rel="noopener") Pixiv FANBOX
-          span /
-          a(href="https://www.patreon.com/cutls" target="_blank" rel="noopener") Patreon
-          span /
-          a.pointer#copyBitcoin Bitcoin(クリックしてアドレスをコピー)
-          p
-            p Kyash
-            a(href="kyash://qr/u/611373232688837504")
-              .qrcode
-      .card
-        p.title Contact me
-        p.semi-title
-          a(href="https://2m.cutls.com/@Cutls" target="_blank" class="white-text effect" rel="me noopener") Mastodon
-        a(href="https://2m.cutls.com/@Cutls" target="_blank" rel="noopener")
-          .thinking.appeal
-        p.description.center
-          a(href="https://2m.cutls.com/@Cutls" target="_blank" class="white-text effect" rel="me noopener")
-            span Cutls
-            span.tech (Cutls@2m.cutls.com)
-        p.description.center
-          a(href="https://status.cutls.dev" target="_blank").small-link Status page
-      .card
-        p.title LOVE
-        p.description.left アイドルマスターシンデレラガールズ
-        p.tech 担当：新田美波
-        p.tech TAKU INOUEのオタク
-        p.tech デレマス作詞作曲家陣の他の提供作品等も追ってる
-        p.spacer
-        p.description.left
-          span チンアナゴ
-          span.tech 京都水族館
-        p.spacer
-        p.description.left
-          span 俳句
-          span.tech ちょっとだけ
-        p.spacer
-        p.description.left
-          span King Gnu
-          span.tech Sympaすき
-      .card
-        p.tech 個人的に好きな曲がランダム(エッジキャッシュあり)で出ます。
-        p.description.left デレマス
-        a(href="https://github.com/cutls/today-recommended-song" target="_blank")
-          img(src="" style={"width": "100%"})#trs
-        p.description.left その他
-        a(href="https://github.com/cutls/today-recommended-song" target="_blank")
-          img(src="" style={"width": "100%"})#trs2
-    h2.center Works
-    p.spacer
-    .flex-lp
-      .card
-        .thedesk.appeal
-        p.title TheDesk
-        p.description.center Mastodon Client for PC
-        p.tech.center__important Electron (JacaScript, HTML, CSS)
-        .action
-          a(href="https://thedesk.top" target="_blank")
-            i.fas.fa-external-link-alt
-          a(href="https://github.com/cutls/TheDesk" target="_blank")
-            i.fab.fa-github
-        p.description.center ドキュメント
-          .action
-            a(href="https://docs.thedesk.top" target="_blank")
-              i.fas.fa-external-link-alt
-      .card
-        p.spacer
-        p.description.left votedon.
-        p.tech
-          span 掲載
-          a(href="http://www.itmedia.co.jp/news/articles/1804/03/news147.html" target="_blank")
-            span マストドンで使えるアンケートツール「votedon.」 - ITmedia NEWS
-            i.fas.fa-external-link-alt
-        p.spacer
-        p.description.left
-          span 被災地のためのマストドン研究会
-          a(href="https://donken.org/forum" target="_blank").small-link
-            i.fas.fa-external-link-alt
-        p.tech マストドン連携ログインを設計
-        p.spacer
-        p.description.left
-          span FatestMastodonShare
-          a(href="https://github.com/cutls/FastestMastodonShare" target="_blank").small-link
-            i.fab.fa-github
-          a(href="https://chrome.google.com/webstore/detail/fastestmastodonshare/gfndaijdpkalbldphbofbjpjmpfibgji" target="_blank").small-link
-            i.fab.fa-chrome
-        p.tech Mastodonへの見ているページのシェアをするための最速Chrome拡張機能
-        p.spacer
-        p.description.left
-          span OpenSticker
-          a(href="https://github.com/cutls/OpenSticker" target="_blank").small-link
-            i.fab.fa-github
-        p.tech Deno製、MastodonのTLに所属インスタンスのFavicon等を出すCSSなど
-      .card
-        p.title 翻訳
-          p.tech ちょっとだけ
-          p.description.left Liberapay(en→ja)
-          p.description.left Mastodonのドキュメント(en→ja)
-      .card
-        p.title 執筆
-        p.description.left
-          span Hexo
-          a(href="https://blog.cutls.com" target="_blank").small-link
-            i.fas.fa-external-link-alt
-        p.tech 
-          a(href="https://code.cutls.com" target="_blank").small-link WordPress
-          span もあった
-        p.tech いくつかのアドベントカレンダーに参加
-        p.description.left
-          span.left 分散SNS萬本 vol.1
-          a(href="https://express.komittee.net/posts/readme-of-distributed-sns-everything-book-vol1/" target="_blank").small-link
-            i.fas.fa-external-link-alt
-        p.tech 執筆協力。C96(コミケ) 技書博, booth等で販売。
-        p.description.left
-          span.left 分散SNS萬本 vol.2
-          a(href="https://connpass.com/event/165550/" target="_blank").small-link
-            i.fas.fa-external-link-alt
-        p.tech 執筆協力。技術書典9でダウンロード販売。
-    #copyright.white-text &copy; Cutls 2015 All rights reserved
+  body
+    section.centerView
+      .thinking.mini
+      h1 Cutls
+      p.links
+        a(href="#about") About me
+        a(href="#loveit") LOVE it
+        a(href="#work") Works
+      p.links
+        a(href="#link") Links
+        a(href="#contact") Contact me
+      p &copy; Cutls 2015
+    a.anchor(name="about") &nbsp;
+    section.centerView
+      .aboutme.mini
+      h2 About me
+      p 限界地方の医学生(2022年現在)
+      p Web programmer
+      p Kansai dialect speaker
+    a.anchor(name="loveit") &nbsp;
+    section.centerView
+      .loveit.mini
+      h2 LOVE it
+      p TypeScript, React, React Native, Next.js
+      p アイドルマスターシンデレラガールズ
+      p チンアナゴ
+    a.anchor(name="work") &nbsp;
+    section.centerView
+      .work.mini
+      h2 Works
+      p 
+        a(href="https://thedesk.top" target="_blank") TheDesk
+        span , Mastodon client for PC
+      p 
+        span votedon. (
+        a(href="http://www.itmedia.co.jp/news/articles/1804/03/news147.html" target="_blank nofollow noopener noreferrer") ITmedia News
+        span )
+      p 分散SNS萬本 
+        a(href="https://express.komittee.net/posts/readme-of-distributed-sns-everything-book-vol1/" target="_blank nofollow noopener noreferrer") vol.1
+        span (C96, 技書博), 
+        a(href="https://connpass.com/event/165550/" target="_blank nofollow noopener noreferrer") vol.2
+        span (技術書典9)
+    a.anchor(name="link") &nbsp;
+    section.centerView
+      .link.mini
+      h2 Links
+      p.links
+        a(href="https://github.com/cutls" target="_blank noopener me") GitHub
+        a(href="https://keybase.io/cutls" target="_blank nofollow noopener noreferrer me") Keybase
+        a(href="https://blog.cutls.dev" target="_blank noopener") Blog
+      p.links
+        a(href="https://cutls.fanbox.cc" target="_blank noopener") Pixiv FANBOX
+        a(href="https://www.patreon.com/cutls" target="_blank noopener") Patreon
+      p.links
+        a(href="https://status.cutls.dev" target="_blank noopener") Status page
+    a.anchor(name="contact") &nbsp;
+    section.centerView
+      .contact.mini
+      h2 Contact me
+      p
+        span Mastodon: 
+        a(href="https://2m.cutls.com/@Cutls" target="_blank noopener me") @Cutls@2m.cutls.com
+      p Email: p at cutls.com (at: @)
+      p 
+        span PGP: 
+        a(href="https://keybase.io/cutls/pgp_keys.asc?fingerprint=126ac1a8fe1b692b80330f7bdaa6cb88cd1a2c97" target="_blank nofollow noopener noreferrer") DAA6 CB88 CD1A 2C97

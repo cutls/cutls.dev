@@ -1,132 +1,47 @@
 @import 'base.scss';
 
-.left-side {
-	text-align: right;
-	width: 50vw;
+section {
+	height: calc(100vh - 9rem);
+	width: calc(100vw - 9rem);
+	padding: 4rem;
+
+	&.centerView {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&.leftView {}
 }
 
-.right-side {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 50vw;
-}
-
-.flex-ct {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	.card {
-		margin-left: 10px;
-		margin-right: 10px;
-	}
-}
-.flex-lp {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-
-.card {
-	width: 300px;
-	max-width: 100%;
-	min-height: 320px;
-	margin: 5px;
-	border-radius: 2px;
-	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-	padding: 25px;
-	text-align: center;
-	.title {
-		font-size: 2rem;
-		margin: 10px;
-	}
-	.semi-title {
-		font-size: 1.6rem;
-		margin: 10px;
-	}
-	.appeal {
-		width: 50px;
-		height: 50px;
-	}
-	img.me {
-		width: 20px;
-	}
-	.action {
-		margin-top: 10px;
-	}
-	.tech {
-		font-size: 0.7rem;
-		color: #e1e1e1;
-		text-align: left;
-		&.center {
-			text-align: center;
-			&__important {
-				text-align: center !important;
-			}
-		}
-	}
-	.action i {
-		font-size: 1.5rem;
-		color: gray;
-		margin-left: 5px;
-		transition: color 0.3s;
-	}
-}
-
-.left {
-    text-align: left;
-}
-.center {
-    text-align: center;
-}
-
-.card .action i:hover {
-	color: white;
-}
-
-a {
-	color: #7cabd1;
-	text-decoration: none;
-	.effect {
-		display: inline-block;
-	}
-	.effect::after {
-		content: '';
-		display: block;
-		width: 0;
-		transition: width 0.3s;
-		border-bottom: 1px solid #7cabd1;
-	}
-	.effect.white-text::after {
-		border-bottom: 1px solid #fff;
-	}
-	.effect:hover::after {
-		width: 100%;
-	}
-}
-
-details {
-	margin-left: 5px;
-}
-
-.pointer {
-	cursor: pointer;
-}
-
-.qrcode {
-	width: 70px;
-	height: 70px;
+.mini {
+	width: 75px;
+	height: 75px;
 	display: inline-block;
-    background-image: url(../img/qrcode.webp);
-    background-size: contain;
+	background-size: contain;
+	&.thinking {
+		background-image: url(../img/thinking.svg);
+	}
+	&.aboutme {
+		background-image: url(../img/1f9be.svg);
+	}
+	&.loveit {
+		background-image: url(../img/2764-fe0f-200d-1f525.svg);
+	}
+	&.work {
+		background-image: url(../img/1f363.svg);
+	}
+	&.link {
+		background-image: url(../img/1f37b.svg);
+	}
+	&.contact {
+		background-image: url(../img/1f5fa.svg);
+	}
 }
-.thinking {
-    background-image: url(../img/thinking.svg);
-    display: inline-block;
-    background-size: contain;
-}
-.thedesk {
-    background-image: url(../img/thedesk.svg);
-    display: inline-block;
-    background-size: contain;
+
+.links {
+	a {
+		margin-right: 1rem;
+	}
 }

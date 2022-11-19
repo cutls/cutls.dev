@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "serve": "webpack serve",
+    "build": "webpack build"
+  },
   "devDependencies": {
     "copy-webpack-plugin": "^7.0.0",
     "css-loader": "^5.0.1",
