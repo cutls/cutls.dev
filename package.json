@@ -1,7 +1,7 @@
 {
   "scripts": {
     "serve": "webpack serve",
-    "build": "webpack build"
+    "build": "webpack"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^7.0.0",

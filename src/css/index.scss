@@ -1,9 +1,8 @@
 @import 'base.scss';
 
 section {
-	height: calc(100vh - 9rem);
-	width: calc(100vw - 9rem);
-	padding: 4rem;
+	height: calc(100vh - 0rem);
+	width: calc(100vw - 0rem);
 
 	&.centerView {
 		display: flex;
@@ -11,8 +10,6 @@ section {
 		align-items: center;
 		flex-direction: column;
 	}
-
-	&.leftView {}
 }
 
 .mini {
